@@ -1,0 +1,19 @@
+<div class="transitionEffect">
+    Sort by:
+    <select ng-model="orderProp">
+        <option value="login">Alphabetical(login)</option>
+        <option value="id">ID</option>
+    </select>
+    <b> list is:-> ?since=4</b>
+    <ul>
+        <li class ="list_item" ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+            <a href="#/user-list/{{phone.login}}" class="thumb"><img ng-src="{{phone.avatar_url}}"></a>
+            <b>login:</b><a href="#/user-list/{{phone.login}}">{{phone.login}}</a>
+            <b>id:</b> {{phone.id}}
+            <!--p><b>email:</b> {{phone.email}}</p>
+            <p><b>Full name: </b> {{phone.name}}</p>
+            <p><b>репозиториев : </b> {{phone.public_repos}}(шт.)</p-->
+        </li>
+    </ul>
+    <!--div id="info">Current filter: {{query}}</div-->    
+</div>

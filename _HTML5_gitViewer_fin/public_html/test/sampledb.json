@@ -1,0 +1,34 @@
+[
+ {
+    "age": 13,
+    "id": "id_1",
+    "login": "F-login-1",
+    "name": "Motorola DEFY\u2122 with MOTOBLUR\u2122",
+    "snippet": "Are you ready for everything life throws your way?",
+    "imageUrl": "test/Yeti01-128.png"  
+},   
+ {
+   "age": 13,
+   "id": "id_2",
+   "login": "DEFY\u2122 with MOTOBLUR\u2122",
+   "name": "Aotorola DEFY\u2122 with MOTOBLUR\u2122",
+   "snippet": "everything life?",
+   "imageUrl": "test/Yeti01-128Big1.png"
+ },
+ {
+   "age": 13,
+   "id": "id_3",
+   "login": "B-Motorola DEFY\u2122 with MOTOBLUR\u2122",
+   "snippet": " your way?",
+	"imageUrl": "test/Yeti01-128.png"   
+ },
+ {
+   "age": 13,
+   "id": "id_4",
+   "login": "C-Motorola DEFY\u2122 with MOTOBLUR\u2122",
+   "imageUrl": "test/Yeti01-128.png",
+   "snippet": "Are you ?"   
+ }
+ ]
+   
+ 

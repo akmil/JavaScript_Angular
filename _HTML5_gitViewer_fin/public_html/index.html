@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="channelsApp">
+
+    <head>
+        <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+        <script src="lib/angular/angular-resource.js"></script><!-- need for factoryGit-->        
+        <script src="factoryGit.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="controller.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <div class="menu">
+
+        <button onclick="location.href = '#/user-list'" id="btnId"/>Show user-list</button>    
+        <a href="#">go to welcome page</a>
+        
+        <div class="search">
+            Sort: <input ng-model="query" placeholder="enter name" value="akmil">
+            <div id="status">Current filter: {{query}}</div>
+        </div>
+    </div>
+    <div ng-view=""></div>
+
+</body>
+
+</html>

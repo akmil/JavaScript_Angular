@@ -1,0 +1,158 @@
+@import url(http://www.google.com/fonts#UsePlace:use/Collection:Roboto:500);
+
+body {
+    margin: 10px;
+    font-family: "Roboto";    
+    min-height: 100%;
+    background-color: rgb(235,235,235);
+    background: #FAEBD7;
+}
+
+div{
+    //display: inline-block;
+    border-color: red;
+    border-radius: 6px;
+    width: 500px;
+}
+ul {
+    padding: 10px;
+}
+
+[ng-view] {
+margin-top: 50px;
+background-color: #999999;
+}
+ 
+@-moz-keyframes transitionEffect {
+    100% {opacity: 1;} 
+    0% {opacity: 0;}
+}
+.transitionEffect{
+    opacity: 1;
+    position: absolute;    
+    background: #fc0;
+    border-bottom: 10px solid #333;
+    left: 20px;
+    -webkit-transition:  0.5s ease-out 0.1s;
+    -moz-transition:  0.5s ease-out 0.1s;   
+    z-index: -1;
+    -moz-animation-name: transitionEffect;
+    -webkit-animation-name: transitionEffect;
+    -o-animation-name: transitionEffect;
+    /* Задержка перед началом */
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    /* Продолжительность анимации */
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.transitionEffect:active {
+    -moz-animation-name: transitionEffect;
+    -webkit-animation-name: transitionEffect;
+    -o-animation-name: transitionEffect;
+    /* Задержка перед началом */
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    /* Продолжительность анимации */
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+.transitionEffect:hover {
+    background: none;
+    left: 150px;
+    border: 2px solid coral;
+    padding: 10px;
+}
+
+#container {
+    background-color: #333333;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+#container >* {
+    /*width: 40px;
+    height: 40px;*/
+    //background-color: green;
+    display: inline-block;
+}
+
+
+.menu{
+    background: none repeat scroll 0% 0% #CCC;
+    color: #8F8F8F;
+    padding: 5px;
+    height: 40px;
+    width: 95%;
+    position: fixed;
+    margin: 0 1%;
+    top: 0px;
+}
+.search{
+    /*position: absolute;*/
+    float: right;
+}
+.list_item{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid coral;
+}
+.list_item:hover{
+    background-color: #FF0;
+}
+#btnId{
+    background-color: #FF0;
+    border: 1px solid coral;
+    border-radius: 6px;
+    width: auto;
+    background: -moz-linear-gradient(center top , #F5F5F5, #CFCFCF);
+    background: -webkit-linear-gradient(center top , #F5F5F5, #CFCFCF);
+    background: -o-linear-gradient(center top , #F5F5F5, #CFCFCF);
+    background: -ms-linear-gradient(center top , #F5F5F5, #CFCFCF);
+    background: linear-gradient(top , #F5F5F5, #CFCFCF);
+    cursor: pointer;
+    padding: 4px;
+    margin: 10px;
+    /*box-shadow: 0px 3px 5px #9f9f9f;
+    text-shadow: 0px 0px 4px #D060FF;*/
+    font-weight: bold;
+}
+
+#btnId:hover{
+    background: none;
+    text-shadow: none;
+    color: #3F3F00;
+    box-shadow: none;
+}
+#btnId:active{
+    box-shadow: 0px 0px 0px #000;
+    text-shadow: 0px -1px #FFF;
+    color: #CC6F9F;
+    border: 1px dotted #CCC;
+}
+
+#status{
+    background-color: greenyellow;
+}
+
+#info {
+    background: #333;
+    color: #BFBFBF; 
+    padding: 5px; 
+    height: 20px;
+    width: auto;
+}
+
+.thumb img{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}

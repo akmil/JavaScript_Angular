@@ -1,0 +1,16 @@
+ {
+    "age": 55,
+    "id": 3,
+    "login": "F-login-1",
+    "name": "yeti 3",
+    "firstname": "firstname_3",
+    "snippet": "Are you ready for everything life throws your way?",
+    "avatar_url": ["test/Yeti01-128.png" , "test/Yeti01-128Big1.png" ,"test/Yeti01-128Big2.png","test/Yeti01-128Big3.png"  ],
+    "job":{
+                "site":"www.javacodegeeks.com",
+                "name":"Java Code Geeks"
+    }
+}  
+ 
+   
+ 

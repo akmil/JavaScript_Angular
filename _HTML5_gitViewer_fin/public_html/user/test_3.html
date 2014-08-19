@@ -1,0 +1,24 @@
+<div class="transitionEffect" >
+    {{text}}:  current page is test3.html
+    <hr>
+    Info: detail view for <b>{{id}}</b><br/>
+    
+
+    <h1>name: {{user.name}}</h1>
+
+    <p>email: {{user.email}}</p>
+    <p><b>Full name: </b> {{user.name}}</p>
+    <p><b>repos_url </b> {{user.repos_url}}</p>
+    public repos :  <a href="#/user-list/repositories/{{user.login}}">{{user.public_repos}}</a>(шт.)
+    
+    <img ng-src="{{user.avatar_url}}" class="phone">
+
+    Repo names:
+    <ul class="phone-thumbs">
+        <li ng-repeat="repo in names_repo | filter:query ">
+            <span type="text" ng-model="repo.name">{{repo.name}}</span>
+        </li>
+    </ul>
+
+
+</div>

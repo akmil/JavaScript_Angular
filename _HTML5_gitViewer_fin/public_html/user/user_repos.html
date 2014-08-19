@@ -1,0 +1,23 @@
+<div class="transitionEffect">     
+</br>
+Some info here {{text}}
+</br>
+<p><b>Имя автора(owner) </b> {{names_repo[0].owner.login}}</p>
+<p><b>Список веток(repos_url) </b> {{names_repo.owner[0]}}</p>
+<ul class="phone-thumbs">
+    <li ng-repeat="repo in names_repo">
+        <b>repo:</b>
+        <span type="text" ng-model="repo.name">{{repo.commits_url}}</span>
+    </li>
+</ul>
+
+<hr>
+Repo names:
+<ul class="phone-thumbs">
+    <li ng-repeat="repo in names_repo | filter:query ">
+        <span type="text" ng-model="repo.name">{{repo.name}}</span>
+    </li>
+</ul>
+
+<div id="info">Current filter: {{query}}</div>
+
